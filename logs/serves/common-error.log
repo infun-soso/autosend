@@ -1,0 +1,30 @@
+2021-12-13 17:26:06,485 ERROR 59986 [-/::1/-/290ms GET /send] nodejs.TypeError: expandFormat(...).match is not a function
+    at configFromStringAndFormat (/Users/wangyanfeng/Documents/wxMsg/node_modules/moment/moment.js:2759:53)
+    at prepareConfig (/Users/wangyanfeng/Documents/wxMsg/node_modules/moment/moment.js:2958:13)
+    at createFromConfig (/Users/wangyanfeng/Documents/wxMsg/node_modules/moment/moment.js:2927:44)
+    at createLocalOrUTC (/Users/wangyanfeng/Documents/wxMsg/node_modules/moment/moment.js:3021:16)
+    at createLocal (/Users/wangyanfeng/Documents/wxMsg/node_modules/moment/moment.js:3025:16)
+    at hooks (/Users/wangyanfeng/Documents/wxMsg/node_modules/moment/moment.js:16:29)
+    at sendmsg.getbirthday (/Users/wangyanfeng/Documents/wxMsg/app/service/sendmsg.js:233:19)
+    at sendmsg.getTemplateData (/Users/wangyanfeng/Documents/wxMsg/app/service/sendmsg.js:59:27)
+    at sendmsg.send (/Users/wangyanfeng/Documents/wxMsg/app/service/sendmsg.js:9:29)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+pid: 59986
+hostname: wangyanfengdeMacBook-Pro.local
+
+2021-12-13 17:26:13,900 ERROR 59986 [-/::1/-/203ms GET /send] nodejs.TypeError: expandFormat(...).match is not a function
+    at configFromStringAndFormat (/Users/wangyanfeng/Documents/wxMsg/node_modules/moment/moment.js:2759:53)
+    at prepareConfig (/Users/wangyanfeng/Documents/wxMsg/node_modules/moment/moment.js:2958:13)
+    at createFromConfig (/Users/wangyanfeng/Documents/wxMsg/node_modules/moment/moment.js:2927:44)
+    at createLocalOrUTC (/Users/wangyanfeng/Documents/wxMsg/node_modules/moment/moment.js:3021:16)
+    at createLocal (/Users/wangyanfeng/Documents/wxMsg/node_modules/moment/moment.js:3025:16)
+    at hooks (/Users/wangyanfeng/Documents/wxMsg/node_modules/moment/moment.js:16:29)
+    at sendmsg.getbirthday (/Users/wangyanfeng/Documents/wxMsg/app/service/sendmsg.js:233:19)
+    at sendmsg.getTemplateData (/Users/wangyanfeng/Documents/wxMsg/app/service/sendmsg.js:59:27)
+    at sendmsg.send (/Users/wangyanfeng/Documents/wxMsg/app/service/sendmsg.js:9:29)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+pid: 59986
+hostname: wangyanfengdeMacBook-Pro.local
+

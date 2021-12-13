@@ -1,0 +1,326 @@
+{
+  "keys": "/Users/wangyanfeng/Documents/wxMsg/config/config.default.js",
+  "middleware": "/Users/wangyanfeng/Documents/wxMsg/config/config.default.js",
+  "weather": {
+    "appid": "/Users/wangyanfeng/Documents/wxMsg/config/config.default.js",
+    "appsecret": "/Users/wangyanfeng/Documents/wxMsg/config/config.default.js"
+  },
+  "weChat": {
+    "appld": "/Users/wangyanfeng/Documents/wxMsg/config/config.default.js",
+    "secret": "/Users/wangyanfeng/Documents/wxMsg/config/config.default.js",
+    "users": "/Users/wangyanfeng/Documents/wxMsg/config/config.default.js",
+    "daily": "/Users/wangyanfeng/Documents/wxMsg/config/config.default.js",
+    "wageDay": "/Users/wangyanfeng/Documents/wxMsg/config/config.default.js",
+    "birthday": "/Users/wangyanfeng/Documents/wxMsg/config/config.default.js"
+  },
+  "time": {
+    "wageDay": "/Users/wangyanfeng/Documents/wxMsg/config/config.default.js",
+    "love": "/Users/wangyanfeng/Documents/wxMsg/config/config.default.js",
+    "birthday": {
+      "2021": "/Users/wangyanfeng/Documents/wxMsg/config/config.default.js",
+      "2022": "/Users/wangyanfeng/Documents/wxMsg/config/config.default.js",
+      "2023": "/Users/wangyanfeng/Documents/wxMsg/config/config.default.js",
+      "2024": "/Users/wangyanfeng/Documents/wxMsg/config/config.default.js",
+      "2025": "/Users/wangyanfeng/Documents/wxMsg/config/config.default.js",
+      "2026": "/Users/wangyanfeng/Documents/wxMsg/config/config.default.js"
+    },
+    "birthYear": "/Users/wangyanfeng/Documents/wxMsg/config/config.default.js"
+  },
+  "session": {
+    "maxAge": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-session/config/config.default.js",
+    "logValue": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-session/config/config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js",
+    "csrf": {
+      "enable": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js",
+      "type": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js"
+    },
+    "xframe": {
+      "enable": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js",
+      "ipExceptionList": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-multipart/config/config.default.js",
+    "allowArrayField": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-multipart/config/config.default.js",
+      "disable": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-development/config/config.default.js",
+    "overrideIgnore": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-static/config/config.default.js"
+  },
+  "view": {
+    "root": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-view/config/config.default.js"
+  },
+  "env": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+  "name": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+  "cookies": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "version": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "description": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "private": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "egg": {
+      "declarations": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+    },
+    "dependencies": {
+      "axios": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "egg": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "moment": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "autod": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "autod-egg": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "egg-ci": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+    },
+    "scripts": {
+      "start": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "stop": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "dev": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "debug": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "test": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "test-local": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "cov": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "lint": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "ci": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "autod": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+    },
+    "ci": {
+      "version": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+    },
+    "repository": {
+      "type": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "url": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+    },
+    "author": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "license": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+  },
+  "baseDir": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "strict": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "depth": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "env": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "level": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "enablePerformanceTimer": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "logging": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "port": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/config.default.js"
+}
