@@ -90,25 +90,24 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-onerror/lib/onerror_page.mustache"
+      "templatePath": "/root/mymsg/node_modules/egg-onerror/lib/onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
       "dirs": [
-        "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-session/config/locales",
-        "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security/config/locales",
-        "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-jsonp/config/locales",
-        "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-onerror/config/locales",
-        "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-i18n/config/locales",
-        "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-watcher/config/locales",
-        "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-schedule/config/locales",
-        "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-multipart/config/locales",
-        "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-development/config/locales",
-        "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-logrotator/config/locales",
-        "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-static/config/locales",
-        "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-view/config/locales",
-        "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/locales",
-        "/Users/wangyanfeng/Documents/wxMsg/config/locales"
+        "/root/mymsg/node_modules/egg-session/config/locales",
+        "/root/mymsg/node_modules/egg-security/config/locales",
+        "/root/mymsg/node_modules/egg-jsonp/config/locales",
+        "/root/mymsg/node_modules/egg-onerror/config/locales",
+        "/root/mymsg/node_modules/egg-i18n/config/locales",
+        "/root/mymsg/node_modules/egg-watcher/config/locales",
+        "/root/mymsg/node_modules/egg-schedule/config/locales",
+        "/root/mymsg/node_modules/egg-multipart/config/locales",
+        "/root/mymsg/node_modules/egg-logrotator/config/locales",
+        "/root/mymsg/node_modules/egg-static/config/locales",
+        "/root/mymsg/node_modules/egg-view/config/locales",
+        "/root/mymsg/node_modules/egg/config/locales",
+        "/root/mymsg/config/locales"
       ],
       "queryField": "locale",
       "cookieField": "locale",
@@ -117,10 +116,10 @@
       "functionName": "__"
     },
     "watcher": {
-      "type": "development",
+      "type": "default",
       "eventSources": {
-        "default": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-watcher/lib/event-sources/default",
-        "development": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-watcher/lib/event-sources/development"
+        "default": "/root/mymsg/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/root/mymsg/node_modules/egg-watcher/lib/event-sources/development"
       }
     },
     "customLogger": {
@@ -144,19 +143,11 @@
       "fileExtensions": [],
       "whitelist": null,
       "allowArrayField": false,
-      "tmpdir": "/var/folders/df/2hxh99ws3plf5b49kp5l0qvw0000gn/T/egg-multipart-tmp/serves",
+      "tmpdir": "/tmp/egg-multipart-tmp/serves",
       "cleanSchedule": {
         "cron": "0 30 4 * * *",
         "disable": false
       }
-    },
-    "development": {
-      "watchDirs": [],
-      "ignoreDirs": [],
-      "fastReady": false,
-      "reloadOnDebug": true,
-      "overrideDefault": false,
-      "overrideIgnore": false
     },
     "logrotator": {
       "filesRotateByHour": null,
@@ -169,20 +160,21 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "/Users/wangyanfeng/Documents/wxMsg/app/public",
+      "dir": "/root/mymsg/app/public",
       "dynamic": true,
       "preload": false,
-      "buffer": false,
-      "maxFiles": 1000
+      "buffer": true,
+      "maxFiles": 1000,
+      "maxAge": 31536000
     },
     "view": {
-      "root": "/Users/wangyanfeng/Documents/wxMsg/app/view",
-      "cache": false,
+      "root": "/root/mymsg/app/view",
+      "cache": true,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
       "mapping": {}
     },
-    "env": "local",
+    "env": "prod",
     "name": "serves",
     "keys": "<String len: 25>",
     "cookies": {},
@@ -240,9 +232,9 @@
       "author": "wanghao",
       "license": "MIT"
     },
-    "baseDir": "/Users/wangyanfeng/Documents/wxMsg",
-    "HOME": "/Users/wangyanfeng",
-    "rundir": "/Users/wangyanfeng/Documents/wxMsg/run",
+    "baseDir": "/root/mymsg",
+    "HOME": "/root",
+    "rundir": "/root/mymsg/run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -274,21 +266,19 @@
       "returnRawBody": true
     },
     "logger": {
-      "dir": "/Users/wangyanfeng/Documents/wxMsg/logs/serves",
+      "dir": "/root/logs/serves",
       "encoding": "utf8",
-      "env": "local",
+      "env": "prod",
       "level": "INFO",
       "consoleLevel": "INFO",
-      "disableConsoleAfterReady": false,
+      "disableConsoleAfterReady": true,
       "outputJSON": false,
       "buffer": true,
       "appLogName": "serves-web.log",
       "coreLogName": "egg-web.log",
       "agentLogName": "egg-agent.log",
       "errorLogName": "common-error.log",
-      "coreLogger": {
-        "consoleLevel": "WARN"
-      },
+      "coreLogger": {},
       "allowDebugAtProd": false,
       "enablePerformanceTimer": false,
       "type": "application"
@@ -326,8 +316,7 @@
       "overrideMethod",
       "session",
       "securities",
-      "i18n",
-      "eggLoaderTrace"
+      "i18n"
     ],
     "workerStartTimeout": 600000,
     "serverTimeout": null,
@@ -345,21 +334,21 @@
     "onClientError": null,
     "middleware": [],
     "weather": {
-      "appid": "14176486",
-      "appsecret": "<String len: 8>"
+      "key": "71d3bf9ee4c940e49739d6a1e9f161b0"
     },
     "weChat": {
       "appld": "wx895f83ca01b0ae94",
       "secret": "<String len: 32>",
       "users": [
+        "opQCY5q4cVc-yKPZi0nfFJXsMuYU",
         "opQCY5iHtsoH34Gjg6UyzfndS_ss"
       ],
-      "daily": "f2H9flzrPZeL1FPddxJpkR-m_pFcR4S539u_FCN6TlI",
+      "daily": "QBTeM6UZU0ocx7mcmxeXpuTQJi7GB-WPGNqoSBB6LjA",
       "wageDay": "DCE3sEZmPV2Fza3NaydDNBjn3EQw7g3N-EUqGxwj9ro",
       "birthday": "gR2Rq3FMUYH9gcckSAXnQ7VNr0GxrcWw73EWs5PnQqs"
     },
     "time": {
-      "wageDay": 15,
+      "wageDay": 10,
       "love": "2020-12-22",
       "birthday": {
         "2021": "2021-10-13",
@@ -397,8 +386,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/plugin.js",
-      "path": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-onerror",
+      "from": "/root/mymsg/node_modules/egg/config/plugin.js",
+      "path": "/root/mymsg/node_modules/egg-onerror",
       "version": "2.1.0"
     },
     "session": {
@@ -408,8 +397,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/plugin.js",
-      "path": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-session",
+      "from": "/root/mymsg/node_modules/egg/config/plugin.js",
+      "path": "/root/mymsg/node_modules/egg-session",
       "version": "3.3.0"
     },
     "i18n": {
@@ -419,8 +408,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/plugin.js",
-      "path": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-i18n",
+      "from": "/root/mymsg/node_modules/egg/config/plugin.js",
+      "path": "/root/mymsg/node_modules/egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -430,8 +419,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/plugin.js",
-      "path": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-watcher",
+      "from": "/root/mymsg/node_modules/egg/config/plugin.js",
+      "path": "/root/mymsg/node_modules/egg-watcher",
       "version": "3.1.1"
     },
     "multipart": {
@@ -443,8 +432,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/plugin.js",
-      "path": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-multipart",
+      "from": "/root/mymsg/node_modules/egg/config/plugin.js",
+      "path": "/root/mymsg/node_modules/egg-multipart",
       "version": "2.13.1"
     },
     "security": {
@@ -456,12 +445,12 @@
         "session"
       ],
       "env": [],
-      "from": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/plugin.js",
-      "path": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-security",
+      "from": "/root/mymsg/node_modules/egg/config/plugin.js",
+      "path": "/root/mymsg/node_modules/egg-security",
       "version": "2.9.0"
     },
     "development": {
-      "enable": true,
+      "enable": false,
       "package": "egg-development",
       "name": "development",
       "dependencies": [
@@ -471,8 +460,8 @@
       "env": [
         "local"
       ],
-      "from": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/plugin.js",
-      "path": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-development",
+      "from": "/root/mymsg/node_modules/egg/config/plugin.js",
+      "path": "/root/mymsg/node_modules/egg-development",
       "version": "2.7.0"
     },
     "logrotator": {
@@ -484,8 +473,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/plugin.js",
-      "path": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-logrotator",
+      "from": "/root/mymsg/node_modules/egg/config/plugin.js",
+      "path": "/root/mymsg/node_modules/egg-logrotator",
       "version": "3.1.0"
     },
     "schedule": {
@@ -495,8 +484,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/plugin.js",
-      "path": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-schedule",
+      "from": "/root/mymsg/node_modules/egg/config/plugin.js",
+      "path": "/root/mymsg/node_modules/egg-schedule",
       "version": "3.6.6"
     },
     "static": {
@@ -506,8 +495,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/plugin.js",
-      "path": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-static",
+      "from": "/root/mymsg/node_modules/egg/config/plugin.js",
+      "path": "/root/mymsg/node_modules/egg-static",
       "version": "2.2.0"
     },
     "jsonp": {
@@ -519,8 +508,8 @@
         "security"
       ],
       "env": [],
-      "from": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/plugin.js",
-      "path": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-jsonp",
+      "from": "/root/mymsg/node_modules/egg/config/plugin.js",
+      "path": "/root/mymsg/node_modules/egg-jsonp",
       "version": "2.0.0"
     },
     "view": {
@@ -530,8 +519,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg/config/plugin.js",
-      "path": "/Users/wangyanfeng/Documents/wxMsg/node_modules/egg-view",
+      "from": "/root/mymsg/node_modules/egg/config/plugin.js",
+      "path": "/root/mymsg/node_modules/egg-view",
       "version": "2.1.3"
     }
   }

@@ -7,6 +7,7 @@ class sendmsg extends Service {
     const { ctx, app } = this;
     const token = await this.getToken();
     const data = await this.getTemplateData();
+    console.log(data, '-----模板消息')
     ctx.logger.info('获取token 结果: %j', token);
     // 模板消息接口文档
     const users = app.config.weChat.users;
@@ -57,7 +58,6 @@ class sendmsg extends Service {
     const wageDay = this.getWageDay();
     // const marry = this.getMarryDay();
     const birthday = this.getbirthday();
-    console.log('birthday', birthday)
     const data = {
       topcolor: '#FF0000',
       data: {},
@@ -132,42 +132,67 @@ class sendmsg extends Service {
           value: getWeather.win,
           color: '#3399ff',
         },
-        message: {
-          value: message,
+        content: {
+          value: message.content,
           color: '#8C8C8C',
         },
+        note: {
+          value: message.note,
+          color: '#000',
+        }
       };
     }
     return data;
   }
   // 获取天气
-  async getWeather(city = '深泽') {
+  async getWeather() {
     const { app } = this;
-    const url = 'https://www.tianqiapi.com/api?unescape=1&version=v6&appid=' + app.config.weather.appid + '&appsecret=' + app.config.weather.appsecret + '&city=' + city;
-    const result = await this.ctx.curl(url, {
-      method: 'get',
-      dataType: 'json',
-    });
-    console.log(result.status);
-    // "wea": "多云",
-    // "tem": "27", 实时温度
-    // "tem1": "27", 高温
-    // "tem2": "17", 低温
-    // "win": "西风",
-    // "air_level": "优",
-    if (result && result.status === 200) {
-      return result.data;
+    try {
+      const day_url = `https://devapi.qweather.com/v7/weather/3d?key=${app.config.weather.key}&location=101190401`
+      const now_url = `https://devapi.qweather.com/v7/weather/now?key=${app.config.weather.key}&location=101190401`
+      const air_url = `https://devapi.qweather.com/v7/air/now?key=${app.config.weather.key}&location=101190401`
+      const day_result = await this.ctx.curl(day_url, {
+        method: 'get',
+        dataType: 'json',
+      });
+      const now_result = await this.ctx.curl(now_url, {
+        method: 'get',
+        dataType: 'json',
+      });
+      const air_result = await this.ctx.curl(air_url, {
+        method: 'get',
+        dataType: 'json',
+      });
+      const day = day_result.data.daily[0]
+      const now = now_result.data.now
+      const air = air_result.data.now
+      // "wea": "多云",
+      // "tem": "27", 实时温度
+      // "tem1": "27", 高温
+      // "tem2": "17", 低温
+      // "win": "西风",
+      // "air_level": "优",
+      return {
+        city: '北京',
+        wea: day.textDay,
+        tem: now.temp,
+        tem1: day.tempMax,
+        tem2: day.tempMin,
+        win: day.windDirDay,
+        air_level: air.category,
+      };
+    } catch (error) {
+      console.log(error)
+      return {
+        city: '北京',
+        wea: '未知',
+        tem: '未知',
+        tem1: '未知',
+        tem2: '未知',
+        win: '未知',
+        air_level: '未知',
+      };
     }
-    return {
-      city,
-      wea: '未知',
-      tem: '未知',
-      tem1: '未知',
-      tem2: '未知',
-      win: '未知',
-      win_speed: '未知',
-      air_level: '未知',
-    };
   }
   // 获取 下次发工资 还有多少天
   getWageDay() {
@@ -252,15 +277,21 @@ class sendmsg extends Service {
   }
   // 获取 每日一句
   async getOneSentence() {
-    const url = 'https://v1.hitokoto.cn/';
+    const url = 'http://api.tianapi.com/everyday/index?key=cbb663a42a8561dc83945ecf19b6be86&rand=1';
     const result = await this.ctx.curl(url, {
       method: 'get',
       dataType: 'json',
     });
-    if (result && result.status === 200) {
-      return result.data.hitokoto;
+    if (result && result.data.code === 200) {
+      return {
+        content: result.data.newslist[0].content,
+        note: result.data.newslist[0].note
+      }
     }
-    return '今日只有我爱你！';
+    return {
+      content: 'Only I love you today!',
+      note: '今日只有我爱你！'
+    };
   }
   // 获取时间日期
   getDatetime() {

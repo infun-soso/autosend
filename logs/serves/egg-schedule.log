@@ -78,3 +78,30 @@
 2021-12-13 17:33:57,745 INFO 60269 [egg-schedule]: register schedule /Users/wangyanfeng/Documents/wxMsg/node_modules/egg-logrotator/app/schedule/clean_log.js
 2021-12-13 17:33:57,745 INFO 60269 [egg-schedule]: register schedule /Users/wangyanfeng/Documents/wxMsg/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
 2021-12-13 17:33:57,745 INFO 60269 [egg-schedule]: register schedule /Users/wangyanfeng/Documents/wxMsg/app/schedule/update_cache.js
+2021-12-13 18:36:45,164 INFO 11006 [Timer] /root/mymsg/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 35594839ms at 2021-12-14 04:30:00.003
+2021-12-13 18:36:45,165 INFO 11006 [Timer] /root/mymsg/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 19394835ms at 2021-12-14 00:00:00.000
+2021-12-13 18:36:45,165 INFO 11006 [Timer] /root/mymsg/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 19395835ms at 2021-12-14 00:00:01.000
+2021-12-13 18:36:45,166 INFO 11006 [Timer] /root/mymsg/app/schedule/update_cache.js next time will execute after 46394835ms at 2021-12-14 07:30:00.001
+2021-12-13 18:36:45,039 INFO 11018 [egg-schedule]: register schedule /root/mymsg/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2021-12-13 18:36:45,039 INFO 11018 [egg-schedule]: register schedule /root/mymsg/node_modules/egg-logrotator/app/schedule/clean_log.js
+2021-12-13 18:36:45,039 INFO 11018 [egg-schedule]: register schedule /root/mymsg/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2021-12-13 18:36:45,039 INFO 11018 [egg-schedule]: register schedule /root/mymsg/app/schedule/update_cache.js
+2023-05-06 09:34:58,855 INFO 20106 [Timer] /root/mymsg/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 68101147ms at 2023-05-07 04:30:00.002
+2023-05-06 09:34:58,855 INFO 20106 [Timer] /root/mymsg/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 51901145ms at 2023-05-07 00:00:00.000
+2023-05-06 09:34:58,856 INFO 20106 [Timer] /root/mymsg/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 51902145ms at 2023-05-07 00:00:01.001
+2023-05-06 09:34:58,857 INFO 20106 [Timer] /root/mymsg/app/schedule/update_cache.js next time will execute after 86341144ms at 2023-05-07 09:34:00.001
+2023-05-06 09:34:58,724 INFO 20118 [egg-schedule]: register schedule /root/mymsg/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2023-05-06 09:34:58,724 INFO 20118 [egg-schedule]: register schedule /root/mymsg/node_modules/egg-logrotator/app/schedule/clean_log.js
+2023-05-06 09:34:58,724 INFO 20118 [egg-schedule]: register schedule /root/mymsg/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2023-05-06 09:34:58,724 INFO 20118 [egg-schedule]: register schedule /root/mymsg/app/schedule/update_cache.js
+2023-05-06 09:38:27,760 INFO 21189 [Timer] /root/mymsg/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 67892242ms at 2023-05-07 04:30:00.002
+2023-05-06 09:38:27,761 INFO 21189 [Timer] /root/mymsg/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 51692239ms at 2023-05-07 00:00:00.000
+2023-05-06 09:38:27,761 INFO 21189 [Timer] /root/mymsg/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 51693239ms at 2023-05-07 00:00:01.000
+2023-05-06 09:38:27,761 INFO 21189 [Timer] /root/mymsg/app/schedule/update_cache.js next time will execute after 32239ms at 2023-05-06 09:39:00.000
+2023-05-06 09:38:27,631 INFO 21202 [egg-schedule]: register schedule /root/mymsg/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2023-05-06 09:38:27,631 INFO 21202 [egg-schedule]: register schedule /root/mymsg/node_modules/egg-logrotator/app/schedule/clean_log.js
+2023-05-06 09:38:27,631 INFO 21202 [egg-schedule]: register schedule /root/mymsg/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2023-05-06 09:38:27,631 INFO 21202 [egg-schedule]: register schedule /root/mymsg/app/schedule/update_cache.js
+2023-05-06 09:39:00,004 INFO 21202 [Job#16833371400018484061089773721] /root/mymsg/app/schedule/update_cache.js executing by app
+2023-05-06 09:39:00,003 INFO 21189 [Timer] /root/mymsg/app/schedule/update_cache.js next time will execute after 86399999ms at 2023-05-07 09:39:00.002
+2023-05-06 09:39:00,952 INFO 21202 [Job#16833371400018484061089773721] /root/mymsg/app/schedule/update_cache.js execute succeed, used 948ms. 

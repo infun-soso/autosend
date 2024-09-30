@@ -50,3 +50,33 @@
 2021-12-13 17:32:03,733 INFO 59556 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/wangyanfeng/Documents/wxMsg/config/config.default.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":2857598,"size":1593,"blocks":8,"atimeMs":1639387923723.4258,"mtimeMs":1639387923669.823,"ctimeMs":1639387923669.823,"birthtimeMs":1639384878806.1577,"atime":"2021-12-13T09:32:03.723Z","mtime":"2021-12-13T09:32:03.670Z","ctime":"2021-12-13T09:32:03.670Z","birthtime":"2021-12-13T08:41:18.806Z"},"remove":false,"isDirectory":false,"isFile":true}
 2021-12-13 17:33:57,060 INFO 59556 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/wangyanfeng/Documents/wxMsg/config/config.default.js","stat":{"dev":16777231,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":2857598,"size":1610,"blocks":8,"atimeMs":1639388037049.6267,"mtimeMs":1639388036998.9014,"ctimeMs":1639388036998.9014,"birthtimeMs":1639384878806.1577,"atime":"2021-12-13T09:33:57.050Z","mtime":"2021-12-13T09:33:56.999Z","ctime":"2021-12-13T09:33:56.999Z","birthtime":"2021-12-13T08:41:18.806Z"},"remove":false,"isDirectory":false,"isFile":true}
 2021-12-13 17:33:57,262 WARN 59556 [agent:development] reload worker because /Users/wangyanfeng/Documents/wxMsg/config/config.default.js change
+2021-12-13 18:36:43,790 INFO 11006 [egg:logger] init all loggers with options: {"dir":"/root/mymsg/logs/serves","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"serves-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"agent"}
+2021-12-13 18:36:43,802 INFO 11006 [egg:core] dump config after load, 4ms
+2021-12-13 18:36:43,844 INFO 11006 [egg-watcher] Start watching: ["/root/mymsg/app","/root/mymsg/config","/root/mymsg/mocks","/root/mymsg/mocks_proxy","/root/mymsg/app.js"]
+2021-12-13 18:36:43,844 INFO 11006 [egg-watcher] Start watching: "/root/mymsg/app"
+2021-12-13 18:36:43,844 INFO 11006 [egg-watcher] Start watching: "/root/mymsg/config"
+2021-12-13 18:36:43,844 INFO 11006 [egg-watcher] Start watching: "/root/mymsg/mocks"
+2021-12-13 18:36:43,844 INFO 11006 [egg-watcher] Start watching: "/root/mymsg/mocks_proxy"
+2021-12-13 18:36:43,845 INFO 11006 [egg-watcher] Start watching: "/root/mymsg/app.js"
+2021-12-13 18:36:43,845 INFO 11006 [egg-watcher:agent] watcher start success
+2021-12-13 18:36:43,863 INFO 11006 [egg:core] dump config after ready, 4ms
+2023-05-06 09:34:57,861 INFO 20106 [egg:logger] init all loggers with options: {"dir":"/root/mymsg/logs/serves","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"serves-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"agent"}
+2023-05-06 09:34:57,867 INFO 20106 [egg:core] dump config after load, 3ms
+2023-05-06 09:34:57,953 INFO 20106 [egg-watcher] Start watching: ["/root/mymsg/app","/root/mymsg/config","/root/mymsg/mocks","/root/mymsg/mocks_proxy","/root/mymsg/app.js"]
+2023-05-06 09:34:57,953 INFO 20106 [egg-watcher] Start watching: "/root/mymsg/app"
+2023-05-06 09:34:57,953 INFO 20106 [egg-watcher] Start watching: "/root/mymsg/config"
+2023-05-06 09:34:57,953 INFO 20106 [egg-watcher] Start watching: "/root/mymsg/mocks"
+2023-05-06 09:34:57,953 INFO 20106 [egg-watcher] Start watching: "/root/mymsg/mocks_proxy"
+2023-05-06 09:34:57,953 INFO 20106 [egg-watcher] Start watching: "/root/mymsg/app.js"
+2023-05-06 09:34:57,954 INFO 20106 [egg-watcher:agent] watcher start success
+2023-05-06 09:34:58,009 INFO 20106 [egg:core] dump config after ready, 15ms
+2023-05-06 09:38:26,893 INFO 21189 [egg:logger] init all loggers with options: {"dir":"/root/mymsg/logs/serves","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"serves-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"agent"}
+2023-05-06 09:38:26,899 INFO 21189 [egg:core] dump config after load, 3ms
+2023-05-06 09:38:26,922 INFO 21189 [egg-watcher] Start watching: ["/root/mymsg/app","/root/mymsg/config","/root/mymsg/mocks","/root/mymsg/mocks_proxy","/root/mymsg/app.js"]
+2023-05-06 09:38:26,922 INFO 21189 [egg-watcher] Start watching: "/root/mymsg/app"
+2023-05-06 09:38:26,922 INFO 21189 [egg-watcher] Start watching: "/root/mymsg/config"
+2023-05-06 09:38:26,922 INFO 21189 [egg-watcher] Start watching: "/root/mymsg/mocks"
+2023-05-06 09:38:26,922 INFO 21189 [egg-watcher] Start watching: "/root/mymsg/mocks_proxy"
+2023-05-06 09:38:26,922 INFO 21189 [egg-watcher] Start watching: "/root/mymsg/app.js"
+2023-05-06 09:38:26,923 INFO 21189 [egg-watcher:agent] watcher start success
+2023-05-06 09:38:26,979 INFO 21189 [egg:core] dump config after ready, 20ms
