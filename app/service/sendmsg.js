@@ -21,8 +21,8 @@ class sendmsg extends Service {
     const results = await Promise.all(promise);
     const promise2 = others.map(id => {
       ctx.logger.info('--------------开始发送每日提醒-----------------------------------------------: %j', id);
-      data.touser = id;
-      return this.toWechart(token, data);
+      data2.touser = id;
+      return this.toWechart(token, data2);
     });
     const results2 = await Promise.all(promise2);
     ctx.logger.info('--------------结束发送每日提醒->结果-----------------------------------------------: %j', results);
@@ -159,7 +159,7 @@ class sendmsg extends Service {
       data: {},
     };
      // 正常模板
-      data.template_id = app.config.weChat.daily;
+      data.template_id = app.config.weChat.daily2;
       // 获取天气
       const getWeather = await this.getWeather();
       // 获取每日一句

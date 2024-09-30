@@ -36,7 +36,7 @@ module.exports = appInfo => {
       'opQCY5u3FuOMWBhq_s216JjUXITQ' // mty
     ],
     daily: 'QBTeM6UZU0ocx7mcmxeXpuTQJi7GB-WPGNqoSBB6LjA', // 普通模板
-    daily2: 'mvEguna6goSKpfWDPw8JUbQD5R31K9PJr2mzAgdCyhk', // 其他人天气模板
+    daily2: 'Df5rU-uAz8H3-ywmoOM-uBG4pjTNm-mflONZ4co2yo0', // 其他人天气模板
     // marry: '********************', // 结婚纪念日模板
     wageDay: 'DCE3sEZmPV2Fza3NaydDNBjn3EQw7g3N-EUqGxwj9ro', // 工资日模板
     birthday: 'gR2Rq3FMUYH9gcckSAXnQ7VNr0GxrcWw73EWs5PnQqs', // 生日模板

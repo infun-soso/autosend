@@ -8,7 +8,9 @@
     "appld": "/root/mymsg/config/config.default.js",
     "secret": "/root/mymsg/config/config.default.js",
     "users": "/root/mymsg/config/config.default.js",
+    "others": "/root/mymsg/config/config.default.js",
     "daily": "/root/mymsg/config/config.default.js",
+    "daily2": "/root/mymsg/config/config.default.js",
     "wageDay": "/root/mymsg/config/config.default.js",
     "birthday": "/root/mymsg/config/config.default.js"
   },
