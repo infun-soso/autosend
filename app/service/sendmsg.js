@@ -7,16 +7,24 @@ class sendmsg extends Service {
     const { ctx, app } = this;
     const token = await this.getToken();
     const data = await this.getTemplateData();
+    const data2 = await this.getTemplateData2();
     console.log(data, '-----模板消息')
     ctx.logger.info('获取token 结果: %j', token);
     // 模板消息接口文档
     const users = app.config.weChat.users;
+    const others = app.config.weChat.others;
     const promise = users.map(id => {
       ctx.logger.info('--------------开始发送每日提醒-----------------------------------------------: %j', id);
       data.touser = id;
       return this.toWechart(token, data);
     });
     const results = await Promise.all(promise);
+    const promise2 = others.map(id => {
+      ctx.logger.info('--------------开始发送每日提醒-----------------------------------------------: %j', id);
+      data.touser = id;
+      return this.toWechart(token, data);
+    });
+    const results2 = await Promise.all(promise2);
     ctx.logger.info('--------------结束发送每日提醒->结果-----------------------------------------------: %j', results);
     return results;
   }
@@ -142,6 +150,59 @@ class sendmsg extends Service {
         }
       };
     }
+    return data;
+  }
+  async getTemplateData2() {
+    const { app } = this;
+    const data = {
+      topcolor: '#FF0000',
+      data: {},
+    };
+     // 正常模板
+      data.template_id = app.config.weChat.daily;
+      // 获取天气
+      const getWeather = await this.getWeather();
+      // 获取每日一句
+      const message = await this.getOneSentence();
+      data.data = {
+        dateTime: {
+          value: this.getDatetime(),
+          color: '#cc33cc',
+        },
+       
+        wea: {
+          value: getWeather.wea,
+          color: '#33ff33',
+        },
+        tem: {
+          value: getWeather.tem,
+          color: '#0066ff',
+        },
+        airLevel: {
+          value: getWeather.air_level,
+          color: '#ff0033',
+        },
+        tem1: {
+          value: getWeather.tem1,
+          color: '#ff0000',
+        },
+        tem2: {
+          value: getWeather.tem2,
+          color: '#33ff33',
+        },
+        win: {
+          value: getWeather.win,
+          color: '#3399ff',
+        },
+        content: {
+          value: message.content,
+          color: '#8C8C8C',
+        },
+        note: {
+          value: message.note,
+          color: '#000',
+        }
+      };
     return data;
   }
   // 获取天气
